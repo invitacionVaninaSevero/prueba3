@@ -1,0 +1,247 @@
+
+:root {
+ --violeta: rgba(204, 105, 219, 0.6); 
+ --violetaOscuro: rgba(200, 19, 228, 0.6);
+ --violetaClaro: rgb(233, 155, 245);
+ /* --violeta: #db00f8; */
+
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animación de corazón en footer */
+.heart-icon {
+    animation: heartBeat 2s infinite;
+}
+.invitation-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: var(--black);
+    font-size: 1.1rem;
+}
+/* Footer */
+.footer {
+    background-color: white;
+    color: var(--violeta);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 1rem;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    color: var(--violeta);
+    margin-bottom: 0.5rem;
+    font-family: "Great Vibes", cursive;
+}
+
+.footer p {
+    color: var(--violeta);
+}
+
+.heart-icon {
+    margin: 1rem 0;
+    color: var(--mint-300);
+    font-size: 1.5rem;
+    animation: heartBeat 2s infinite;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-link {
+    color: var(--violeta);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--violeta);
+    transform: scale(1.2);
+}
+
+.footer-info {
+    color: var(--mint-300);
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+       color: var(--violeta);
+}
+.btn-purple {
+  background-color: var(--violeta); /* equivalente a bg-violet-300 */
+  color: white;              /* text-white */
+  font-size: 0.875rem;       /* text-sm */
+  font-weight: 500;          /* font-medium */
+  padding: 0.75rem 2rem;     /* py-3 px-8 */
+  border-radius: 9999px;     /* rounded-full */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* shadow */
+  transition: all 0.2s;      /* transition */
+}
+
+.btn-purple:hover {
+  background-color: var(--violeta); /* equivalente a hover:bg-violet-400 */
+}
+.titulo-secundario {
+  font-size: 1.125rem;       /* text-lg */
+  letter-spacing: 0.1em;     /* tracking-widest */
+  text-transform: uppercase; /* uppercase */
+  color: white;     /* text-pink-200 */
+  margin-bottom: 1rem;       /* mb-4 */
+}
+
+
+.parallax {
+  background-image: url('imagenes/15AÑOS.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.curvas-container {
+  position: relative;
+  height: 550px; 
+  margin-top: -350px;
+}
+.circulo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgba(204, 105, 219, 0.6); 
+  z-index: 10; 
+}
+.lineas {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 1; 
+}
+path {
+  stroke-width: 1.5;
+}
+.banner {
+  background-color: rgba(204, 105, 219, 0.6);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  display: inline-block;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+.flor {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 0;
+  opacity: 0.8;
+}
+/* Lineas divisorias */
+.ondas {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+}
+.linea {
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* Carrusel */
+.seccion-carrusel{
+  font-family: 'Playfair Display', serif;
+}
+.titulo {
+  font-family: 'Great Vibes', cursive;
+}
+/* Seccion Detalles */
+.detalles {
+  font-family: 'Raleway', sans-serif;
+}
+.titulo-detalle {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.p-detalles, .boton-detalles {
+  font-weight: 300;
+}
+.card .p-detalles {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(204, 105, 219, 0.6);
+}
+.boton-detalles {
+  font-size: 0.875rem;
+  letter-spacing: 0.3px;
+}
+/*-------RESPONSIVE-----------*/
+@media screen and (max-width:2000px) {
+  .debajo-reloj{
+    margin-top: 10px;
+  }
+  .detalles{
+    margin-top: -250px;
+  }
+  .curvas-container {
+    margin-top: -420px;
+  }
+  .titulo{
+    margin-top: 150px;
+  }
+  .carrusel{
+    margin-top: -500px;
+    margin-bottom: 250px;
+  }
+}
+@media screen and (max-width:786px) {
+  .detalles{
+    margin-top: -150px;
+  }
+  .curvas-container {
+    margin-top: -320px;
+  }
+  .carrusel{
+    margin-top: -600px;
+    margin-bottom: 70px;
+  }
+  footer{
+    padding: 40px;
+  }
+}
+@media screen and (max-width:400px) {
+  .detalles{
+    margin-top: 50px;
+  }
+  .curvas-container {
+    margin-top: -100px;
+  }
+  .carrusel{
+    margin-top: -520px;
+  }
+}
